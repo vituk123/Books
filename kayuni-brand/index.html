@@ -87,7 +87,16 @@
     <figure><img src="animated/kayuni-loader.svg" width="96" alt=""><figcaption>Loader (loops)</figcaption></figure>
   </div>
 
-  <p class="eyebrow">05 — Usage</p>
+  <p class="eyebrow">05 — 3D / WebGL</p>
+  <h2>The logo in three dimensions</h2>
+  <p class="lede">Built with Three.js and WebGL. About 12,000 data points swirl in and settle into the exact outline of the bird and the wordmark. The logo then turns into solid, lit 3D geometry, extruded from the same vector paths, and keeps gliding. Move the mouse to tilt it and click to replay. <a href="webgl/kayuni-3d.html">Open the live version</a> · <a href="webgl/kayuni-3d-light.html">light theme</a></p>
+  <div class="grid">
+    <div class="tile dark" style="padding:0;overflow:hidden"><img src="webgl/kayuni-3d-particles.png" alt="Particles forming the logo" style="max-height:none;width:100%"><span class="cap">Data points forming</span></div>
+    <div class="tile dark" style="padding:0;overflow:hidden"><img src="webgl/kayuni-3d.png" alt="Solid 3D logo" style="max-height:none;width:100%"><span class="cap">Solid 3D</span></div>
+    <div class="tile wide dark" style="padding:0;overflow:hidden"><video src="webgl/kayuni-3d.mp4" autoplay muted loop playsinline style="width:100%;display:block"></video><span class="cap">kayuni-3d.mp4</span></div>
+  </div>
+
+  <p class="eyebrow">06 — Usage</p>
   <h2>Rules</h2>
   <table>
     <tr><td>Clear space</td><td>Keep a margin equal to the height of the K on every side. Every exported file already includes half of that margin.</td></tr>
@@ -96,7 +105,7 @@
     <tr><td>Motion</td><td>The intro plays once: the outline traces in, the bird glides into place, then the letters rise in sequence. The loader is for waiting states only.</td></tr>
   </table>
 
-  <p class="eyebrow">06 — Files</p>
+  <p class="eyebrow">07 — Files</p>
   <h2>Which file to use</h2>
   <table>
     <tr><td>Website, Figma, Illustrator</td><td><code>svg/</code>: pure vector paths with no fonts, so they scale to any size.</td></tr>
@@ -104,6 +113,7 @@
     <tr><td>Printers, signage, merchandise</td><td><code>pdf/</code>: vector PDF, which any print shop can open.</td></tr>
     <tr><td>Browser tab &amp; phone home screen</td><td><code>favicon/</code>: .ico, .svg, apple-touch-icon, Android icons and web manifest.</td></tr>
     <tr><td>LinkedIn, X, link previews</td><td><code>social/</code>: avatar, banners and Open Graph image.</td></tr>
+    <tr><td>3D / WebGL</td><td><code>webgl/</code>: live Three.js page (a single offline HTML file), 3D videos in widescreen, square and vertical, and hero stills.</td></tr>
     <tr><td>Video intros, presentations</td><td><code>animated/</code>: MP4, WebM, GIF, animated SVG and an HTML intro.</td></tr>
   </table>
 </main>
