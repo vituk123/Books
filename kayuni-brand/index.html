@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kayuni Identity</title>
+<link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+<style>
+  :root{--ink:#0E0E10;--paper:#F6F5F1;--lake:#0F5E78;--dawn:#E09A2F;--line:#E2E0D8;--muted:#6B6A66}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:1080px;margin:0 auto;padding:0 16px 96px}
+  header.hero{min-height:78vh;display:grid;place-items:center;border-bottom:1px solid var(--line)}
+  header.hero img{width:min(640px,86vw);cursor:pointer}
+  .eyebrow{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);margin:72px 0 8px}
+  h2{font-size:28px;font-weight:500;letter-spacing:-.01em;margin:0 0 20px}
+  p.lede{max-width:62ch;color:#33322F}
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .tile{border:1px solid var(--line);border-radius:14px;padding:28px;display:grid;place-items:center;min-height:190px;position:relative;background:#fff}
+  .tile.dark{background:var(--ink);border-color:var(--ink)} .tile.lake{background:var(--lake);border-color:var(--lake)}
+  .tile img{max-width:100%;max-height:120px}
+  .tile .cap{position:absolute;left:14px;bottom:10px;font-size:11px;color:var(--muted)}
+  .tile.dark .cap,.tile.lake .cap{color:#ffffff99}
+  .wide{grid-column:1/-1}
+  .swatch{border-radius:14px;min-height:160px;padding:18px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid var(--line)}
+  .swatch b{font-weight:600} .swatch code{font-size:12px;opacity:.8}
+  .concept{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+  .concept svg{width:100%;height:auto}
+  .sizes{display:flex;align-items:flex-end;gap:28px;flex-wrap:wrap}
+  .sizes figure{margin:0;text-align:center;font-size:11px;color:var(--muted)}
+  table{border-collapse:collapse;width:100%;font-size:14px}
+  td{border-top:1px solid var(--line);padding:10px 8px;vertical-align:top} td:first-child{font-weight:500;white-space:nowrap}
+  a{color:var(--lake)}
+  @media (max-width:720px){.concept{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hero"><img src="animated/kayuni-intro.svg" alt="Kayuni" title="Click to replay" onclick="this.src=this.src.split('?')[0]+'?'+Date.now()"></header>
+<main>
+
+  <p class="eyebrow">01 — Concept</p>
+  <h2>Kayuni: a small bird that sees far</h2>
+  <div class="concept">
+    <p class="lede"><em>Kayuni</em> means “small bird” in Tumbuka. The mark is a swift, drawn as one continuous line: a small head, a wing that <strong>rises</strong> steeply, and a long tail that settles like a <strong>trend line</strong>. Read one way it is a bird in flight. Read another way it is a chart that rises and then flattens, which is the core job of a research firm.</p>
+    <svg viewBox="0 0 200 130" aria-label="Construction">
+      <g fill="none" stroke="#0F5E78" stroke-width=".4" stroke-dasharray="2 2">
+        <line x1="38" y1="55" x2="106" y2="6"/><line x1="63.5" y1="60" x2="194" y2="113"/>
+        <circle cx="24" cy="57" r="7.5"/>
+      </g>
+      <path fill="#0E0E10" fill-opacity=".92" d="M8 58L16.2 55.6C18.6 50.4 25.6 48.4 31 51.4C33.6 52.9 35.6 54.6 38.2 55.2C60 44 82 26 106 6C90 23 74 42 63.5 60C98 86 146 104 194 113C146 109.5 98 101 60 86C45 80 33 72.5 25 66C21.5 63.2 18.5 61 16 60.4Z"/>
+      <g font-size="4.2" fill="#6B6A66" font-family="ui-sans-serif,system-ui"><text x="104" y="16">the ascent</text><text x="140" y="124">the trend line</text><text x="6" y="46">the observer</text></g>
+    </svg>
+  </div>
+
+  <p class="eyebrow">02 — Logo</p>
+  <h2>Lockups</h2>
+  <div class="grid">
+    <div class="tile wide"><img src="svg/kayuni-horizontal.svg" alt="Horizontal lockup"><span class="cap">Primary · horizontal</span></div>
+    <div class="tile"><img src="svg/kayuni-stacked.svg" alt="Stacked lockup"><span class="cap">Stacked</span></div>
+    <div class="tile"><img src="svg/kayuni-mark.svg" alt="Mark"><span class="cap">Mark</span></div>
+    <div class="tile"><img src="svg/kayuni-wordmark.svg" alt="Wordmark"><span class="cap">Wordmark</span></div>
+    <div class="tile dark wide"><img src="svg/kayuni-horizontal-white.svg" alt="Reversed"><span class="cap">Reversed on Ink</span></div>
+    <div class="tile lake"><img src="svg/kayuni-stacked-white.svg" alt="On Lake"><span class="cap">On Lake</span></div>
+    <div class="tile"><img src="svg/kayuni-horizontal-lake.svg" alt="Lake"><span class="cap">Lake on white</span></div>
+  </div>
+
+  <p class="eyebrow">03 — Colour</p>
+  <h2>One accent colour, used sparingly</h2>
+  <div class="grid">
+    <div class="swatch" style="background:var(--ink);color:#fff"><b>Ink</b><code>#0E0E10 · rgb 14 14 16</code></div>
+    <div class="swatch" style="background:var(--paper)"><b>Paper</b><code>#F6F5F1 · rgb 246 245 241</code></div>
+    <div class="swatch" style="background:var(--lake);color:#fff"><b>Lake</b><code>#0F5E78 · rgb 15 94 120</code></div>
+    <div class="swatch" style="background:var(--dawn)"><b>Dawn</b><code>#E09A2F · data highlight only</code></div>
+  </div>
+
+  <p class="eyebrow">04 — App icons &amp; favicon</p>
+  <h2>Small sizes</h2>
+  <div class="sizes">
+    <figure><img src="svg/kayuni-icon.svg" width="128" alt=""><figcaption>App icon</figcaption></figure>
+    <figure><img src="svg/kayuni-icon-lake.svg" width="96" alt=""><figcaption>Lake</figcaption></figure>
+    <figure><img src="svg/kayuni-icon-light.svg" width="64" alt="" style="outline:1px solid var(--line);border-radius:14px"><figcaption>Light</figcaption></figure>
+    <figure><img src="favicon/favicon-48.png" width="48" alt=""><figcaption>48</figcaption></figure>
+    <figure><img src="favicon/favicon-32.png" width="32" alt=""><figcaption>32</figcaption></figure>
+    <figure><img src="favicon/favicon-16.png" width="16" alt=""><figcaption>16</figcaption></figure>
+    <figure><img src="animated/kayuni-loader.svg" width="96" alt=""><figcaption>Loader (loops)</figcaption></figure>
+  </div>
+
+  <p class="eyebrow">05 — Usage</p>
+  <h2>Rules</h2>
+  <table>
+    <tr><td>Clear space</td><td>Keep a margin equal to the height of the K on every side. Every exported file already includes half of that margin.</td></tr>
+    <tr><td>Minimum size</td><td>Horizontal lockup: 96 px / 25 mm wide. Mark alone: 20 px / 6 mm wide. Below that, use the favicon tile.</td></tr>
+    <tr><td>Don’t</td><td>Don’t recolour the mark outside the palette, stretch it, add shadows, rotate it, or flip the bird to face right. It always flies forward in reading direction, toward the text.</td></tr>
+    <tr><td>Motion</td><td>The intro plays once: the outline traces in, the bird glides into place, then the letters rise in sequence. The loader is for waiting states only.</td></tr>
+  </table>
+
+  <p class="eyebrow">06 — Files</p>
+  <h2>Which file to use</h2>
+  <table>
+    <tr><td>Website, Figma, Illustrator</td><td><code>svg/</code>: pure vector paths with no fonts, so they scale to any size.</td></tr>
+    <tr><td>Word, PowerPoint, Google Docs</td><td><code>png/</code>: transparent background, several widths (use the largest that fits).</td></tr>
+    <tr><td>Printers, signage, merchandise</td><td><code>pdf/</code>: vector PDF, which any print shop can open.</td></tr>
+    <tr><td>Browser tab &amp; phone home screen</td><td><code>favicon/</code>: .ico, .svg, apple-touch-icon, Android icons and web manifest.</td></tr>
+    <tr><td>LinkedIn, X, link previews</td><td><code>social/</code>: avatar, banners and Open Graph image.</td></tr>
+    <tr><td>Video intros, presentations</td><td><code>animated/</code>: MP4, WebM, GIF, animated SVG and an HTML intro.</td></tr>
+  </table>
+</main>
+</body>
+</html>
